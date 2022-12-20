@@ -44,7 +44,7 @@ playSound(randomChosenColour);
 };
 
 function playSound(name) {
-    var audio = new Audio("sounds/"+name+".mp3");
+    var audio = new Audio(name+".mp3");
     audio.play();
 }
 
@@ -65,7 +65,7 @@ function checkAnswer(currentLevel) {
         }
     }
     else {
-        var wrongAudio = new Audio("sounds/wrong.mp3");
+        var wrongAudio = new Audio("wrong.mp3");
         wrongAudio.play();
 
         $("body").addClass("game-over");
